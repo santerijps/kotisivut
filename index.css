@@ -1,0 +1,29 @@
+body {
+    width: 800px;
+    margin: auto;
+}
+
+#image-container {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#image-container img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+#name-and-description-container {
+    display: inline-block;
+}
+
+#name-and-description-container h1 {
+    margin-bottom: 0px;
+}
+
+
+img#profile-pic {
+
+}

@@ -1,37 +1,48 @@
+<!DOCTYPE html>
 <html>
 
     <head>
-        <title>Kotisivut!!!!!</title>
+        <title>CV Santeri</title>
+        <link rel="stylesheet" href="./index.css" />
     </head>
 
     <body>
-        <h1 style="font-size: 2pt;">Terve!</h1>
-        <h2>Pienempi terve</h2>
-        <h6>Pienin terve</h6>
 
-        <hr>
-        <input>
-        <br>
+        <div id="heading-container">
 
-        <p>Tervetuoloa minun sivulleni!</p>
+            <div id="image-container">
+                <img id="profile-pic" src="./image.png" />
+            </div>
 
-        <div>
-            laatikot
+            <div id="name-and-description-container">
+                <h1>Santeri Sydänmetsä</h1>
+                <p>
+                    Tähän tulee lyhyt kuvaus itsestäni.
+                    <br>
+                    Minä olen Helsingissä asusteleva ohjelmistokehittäjä...
+                </p>
+            </div>
+
         </div>
 
-        <div>
-            laatikot
-            Hedelmät:
-            <ol>
-                <li>banaani</li>
-                <li>omena</li>
-            </ol>
-        </div>
+        <button id="counter-button">
+            Painettu 0 kertaa    
+        </button>
 
-        <ul>
-            <li>eka</li>
-            <li>toka</li>
-        </ul>
+        <script>
+            const button = document.getElementById("counter-button");
+            let count = 0;
+
+            button.onclick = () => {
+                count += 1;
+
+                if (count === 10) {
+                    count = 0;
+                }
+
+                button.innerText = `Painettu ${count} kertaa`;
+            };
+        </script>
 
     </body>
 
